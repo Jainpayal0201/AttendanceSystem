@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Attendance System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_details"><u>View Details</u></string>
+    <string-array name="department">
+        <item>IT</item>
+        <item>CO</item>
+        <item>ME</item>
+        <item>CE</item>
+    </string-array>
+    <string-array name="year">
+        <item>FY</item>
+        <item>SY</item>
+        <item>TY</item>
+        <item>BE</item>
+    </string-array>
+    <string-array name="it_fy_subj">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Mechanics</item>
+    </string-array>
+    <string-array name="it_sy_subj">
+        <item>Basics of Electronics</item>
+        <item>Computer Languages</item>
+        <item>Operating Systems</item>
+        <item>DBMS</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="it_ty_subj">
+        <item>JAVA </item>
+        <item>C++</item>
+        <item>Software Testing</item>
+        <item>Internet Security</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="it_ly_subj">
+        <item>Data Structures </item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Discrete Mathematics</item>
+        <item>Computer Architecture and Organisation</item>
+    </string-array>
+
+    <string-array name="co_fy_subj">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Mechanics</item>
+    </string-array>
+    <string-array name="co_sy_subj">
+        <item>Basics of Electronics</item>
+        <item>Computer Languages</item>
+        <item>Operating Systems</item>
+        <item>DBMS</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="co_ty_subj">
+        <item>JAVA </item>
+        <item>C++</item>
+        <item>Software Testing</item>
+        <item>Internet Security</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="co_ly_subj">
+        <item>Data Structures </item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Discrete Mathematics</item>
+        <item>Computer Architecture and Organisation</item>
+    </string-array>
+
+    <string-array name="me_fy_subj">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Mechanics</item>
+    </string-array>
+    <string-array name="me_sy_subj">
+        <item>Basics of Electronics</item>
+        <item>Computer Languages</item>
+        <item>Operating Systems</item>
+        <item>DBMS</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="me_ty_subj">
+        <item>JAVA </item>
+        <item>C++</item>
+        <item>Software Testing</item>
+        <item>Internet Security</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="me_ly_subj">
+        <item>Data Structures </item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Discrete Mathematics</item>
+        <item>Computer Architecture and Organisation</item>
+    </string-array>
+    <string-array name="ce_fy_subj">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Mechanics</item>
+    </string-array>
+    <string-array name="ce_sy_subj">
+        <item>Basics of Electronics</item>
+        <item>Computer Languages</item>
+        <item>Operating Systems</item>
+        <item>DBMS</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="ce_ty_subj">
+        <item>JAVA </item>
+        <item>C++</item>
+        <item>Software Testing</item>
+        <item>Internet Security</item>
+        <item>Microprocessor</item>
+    </string-array>
+    <string-array name="ce_ly_subj">
+        <item>Data Structures </item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Discrete Mathematics</item>
+        <item>Computer Architecture and Organisation</item>
+    </string-array>
+</resources>

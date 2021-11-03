@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AddStudent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10px">
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:padding="10dp"
+            ></ImageView>
+        <TextView
+            android:id="@+id/navbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Faculty"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="First Name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_first_name"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="15dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="Last Name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_last_name"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="15dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="Address">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_address"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="15dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="Phone Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_phone_no"
+                android:drawableLeft="@drawable/phone_call"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="Email Address">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_email"
+                android:drawableLeft="@drawable/gmail"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:boxStrokeColor="@android:color/darker_gray"
+            app:hintTextColor="@android:color/darker_gray"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:passwordToggleEnabled="true"
+            android:hint="Password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_passwd"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:maxLength="8"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:hintTextColor="@android:color/darker_gray"
+            app:boxStrokeColor="@android:color/darker_gray"
+            android:hint="Qualification">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faculty_qualification"
+                android:drawableLeft="@drawable/qualification"
+                android:drawablePadding="15dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_faculty_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD FACULTY"
+                android:textSize="12dp"
+                android:background="@color/green"
+                app:cornerRadius="10dp"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="30dp">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/faculty_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:textSize="12dp"
+                android:background="@color/green"
+                app:cornerRadius="10dp"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginLeft="10dp">
+            </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

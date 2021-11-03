@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentnavigation"
+    app:startDestination="@id/loginPage">
+
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.attendancesystem.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_adminDashboard2"
+            app:destination="@id/adminDashboard"
+            app:popUpTo="@id/adminDashboard"/>
+    </fragment>
+    <fragment
+        android:id="@+id/adminDashboard"
+        android:name="com.example.attendancesystem.AdminDashboard"
+        android:label="fragment_admin_dashboard"
+        tools:layout="@layout/fragment_admin_dashboard">
+        <action
+            android:id="@+id/action_adminDashboard_to_loginPage"
+            app:destination="@id/loginPage"
+            app:popUpTo="@id/loginPage"/>
+
+</fragment>
+
+    <fragment
+        android:id="@+id/addStudent"
+        android:name="com.example.attendancesystem.AddStudent"
+        android:label="fragment_add_student"
+        tools:layout="@layout/fragment_add_student" />
+    <fragment
+        android:id="@+id/addFaculty"
+        android:name="com.example.attendancesystem.AddFaculty"
+        android:label="AddFaculty"
+        tools:layout="@layout/fragment_add_faculty"/>
+    <fragment
+        android:id="@+id/viewStudent"
+        android:name="com.example.attendancesystem.ViewStudent"
+        android:label="fragment_view_student"
+        tools:layout="@layout/fragment_view_student" />
+    <fragment
+        android:id="@+id/studentViewDetails"
+        android:name="com.example.attendancesystem.StudentViewDetails"
+        android:label="StudentViewDetails" />
+    <fragment
+        android:id="@+id/updateDetails"
+        android:name="com.example.attendancesystem.UpdateDetails"
+        android:label="fragment_update_details"
+        tools:layout="@layout/fragment_update_details" />
+    <fragment
+        android:id="@+id/viewFaculty"
+        android:name="com.example.attendancesystem.ViewFaculty"
+        android:label="fragment_view_faculty"
+        tools:layout="@layout/fragment_view_faculty" />
+    <fragment
+        android:id="@+id/facultyViewDetails"
+        android:name="com.example.attendancesystem.FacultyViewDetails"
+        android:label="fragment_faculty_view_details"
+        tools:layout="@layout/fragment_faculty_view_details" />
+    <fragment
+        android:id="@+id/updateFacultyDetails"
+        android:name="com.example.attendancesystem.UpdateFacultyDetails"
+        android:label="fragment_update_faculty_details"
+        tools:layout="@layout/fragment_update_faculty_details" />
+    <fragment
+        android:id="@+id/facultyDashboard"
+        android:name="com.example.attendancesystem.FacultyDashboard"
+        android:label="fragment_faculty_dashboard"
+        tools:layout="@layout/fragment_faculty_dashboard"><action
+        android:id="@+id/action_facultyDashboard_to_loginPage"
+        app:destination="@id/loginPage"
+        app:popUpTo="@id/loginPage"/></fragment>
+    <fragment
+        android:id="@+id/addAttendance"
+        android:name="com.example.attendancesystem.AddAttendance"
+        android:label="fragment_add_attendance"
+        tools:layout="@layout/fragment_add_attendance" />
+    <fragment
+        android:id="@+id/viewAttendance"
+        android:name="com.example.attendancesystem.ViewAttendance"
+        android:label="fragment_view_attendance"
+        tools:layout="@layout/fragment_view_attendance" />
+</navigation>

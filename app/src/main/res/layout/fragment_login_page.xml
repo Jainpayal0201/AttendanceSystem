@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginPage"
+    android:background="@color/white"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:layout_width="238dp"
+        android:layout_height="173dp"
+        android:src="@drawable/logo1"
+        ></ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:hintTextColor="@android:color/darker_gray"
+        app:boxStrokeColor="@android:color/darker_gray"
+        android:hint="UserName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernm"
+            android:drawableLeft="@drawable/user"
+            android:drawableRight="@drawable/reset"
+            android:drawablePadding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@android:color/darker_gray"
+        app:hintTextColor="@android:color/darker_gray"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        android:hint="Password">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwd"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/forgetpasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_gravity="right"></TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:background="@color/green"
+            app:cornerRadius="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="15dp">
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+</LinearLayout>
